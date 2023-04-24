@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.fundo img{
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+ 
+}
+.buracos{
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+
+}
+.page{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: "A B C D" "E F G H" "I J K L";
+  width: 50%;
+  margin: 0 auto;
+  top: 50%;
+  gap: 80px;
+}
+
+
+.buracos:nth-child(1){
+  grid-area: A;
+}
+.buracos:nth-child(2){
+  grid-area: B;
+  animation: test 1s 3s ;
+}
+.buracos:nth-child(3){
+  grid-area: C;
+}
+.buracos:nth-child(4){
+  grid-area: D;
+}
+.buracos:nth-child(5){
+  grid-area: E;
+  animation: test 1s 2s ;
+}
+.buracos:nth-child(6){
+  grid-area: F;
+}
+.buracos:nth-child(7){
+  grid-area: G;
+}
+.buracos:nth-child(8){
+  grid-area: H;
+}
+.buracos:nth-child(9){
+  grid-area: I;
+  animation: test 1s 1s ;
+}
+.buracos:nth-child(10){
+  grid-area: J;
+}
+.buracos:nth-child(11){
+  grid-area: K;
+  animation: test 1s ;
+  
+}
+
+.buracos:nth-child(12){
+  grid-area: L;
+
+}
+
+
+.buracos{
+  background-image: url(images/toupeira6.svg);
+  width: 223px;
+  height: 169px;
+  
+
+}
+
+
+
+@keyframes test {
+
+  0% {
+    background-image: url(images/toupeira1.svg);
+    background-size: cover;
+    
+}
+  20% {
+    background-image: url(images/toupeira2.svg);
+    background-size: cover;
+}
+  40% { 
+  background-image: url(images/toupeira3.svg);
+  background-size: cover;
+}
+  60% {
+  background-image: url(images/toupeira4.svg);
+  background-size: cover;
+}
+  80% {
+  background-image: url(images/toupeira5.svg);
+  background-size: cover;
+}
+  100% {
+  background-image: url(images/toupeira6.svg);
+  background-size: cover;
+  
+}
+}
